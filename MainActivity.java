@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     }
 
 
-    // Method to Add 1 to current Goal Number for Team A
+    // Method to Add 1 to current Goal Number
 
     public void addTeamAGoal(View view) {
 
@@ -29,9 +29,9 @@ public class MainActivity extends Activity {
 
     }
 
-    // Method to Add 1 to current Corners For Team A
+    // Method to Add 1 to current Goal Number
 
-    public void addTeamAConner(View view) {
+    public void addTeamACorner(View view) {
 
         teamACorner = teamACorner + 1;
 
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 
     }
 
-    // Method to Add 1 to current Goal Number For Team B
+    // Method to Add 1 to current Goal Number
 
     public void addTeamBGoal(View view) {
 
@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 
     }
 
-    // Method to Add 1 to current Corners for team B
+    // Method to Add 1 to current Goal Number
 
     public void addTeamBCorner(View view) {
 
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
     }
 
 
-//Method to update the Corner Text View For Team A
+//Method to update the Goal Text View
 
     public void cornerTeamA(int corner) {
         TextView cornerForTeamA = (TextView) findViewById(R.id.corner_team_A);
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
     }
 
 
-//Method to update the Goal Text View For Team A
+//Method to update the Goal Text View
 
     public void goalTeamA(int goal) {
         TextView goalForTeamA = (TextView) findViewById(R.id.goal_team_A);
@@ -78,17 +78,17 @@ public class MainActivity extends Activity {
 
 
     }
-//Method to update the Corner Text View For Team B
+//Method to update the Goal Text View
 
     public void cornerTeamB(int corner) {
-        TextView cornerForTeamA = (TextView) findViewById(R.id.corner_team_B);
-        cornerForTeamA.setText("" + corner);
+        TextView cornerForTeamB = (TextView) findViewById(R.id.corner_team_B);
+        cornerForTeamB.setText("" + corner);
 
 
     }
 
 
-//Method to update the Goal Text View For Team B
+//Method to update the Goal Text View
 
     public void goalTeamB(int goal) {
         TextView goalForTeamA = (TextView) findViewById(R.id.goal_team_B);
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 
 
     }
-//Method to Reset the scores and corners
+
     public void reset(View view) {
 
 
